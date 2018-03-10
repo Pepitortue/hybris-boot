@@ -1052,7 +1052,7 @@ case "$DEVICE" in
             "$@"
         ;;
         
-            "d855")
+    "d855")
         sed -i \
             -e 's block/platform/msm_sdcc.1/by-name/userdata mmcblk0p43 ' \
             -e 's block/platform/msm_sdcc.1/by-name/cache mmcblk0p41 ' \
