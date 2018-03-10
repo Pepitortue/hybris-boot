@@ -1051,6 +1051,21 @@ case "$DEVICE" in
             -e 's block/bootdevice/by-name/oem mmcblk0p30 ' \
             "$@"
         ;;
+        
+            "d855")
+        sed -i \
+            -e 's block/platform/msm_sdcc.1/by-name/userdata mmcblk0p43 ' \
+            -e 's block/platform/msm_sdcc.1/by-name/cache mmcblk0p41 ' \
+            -e 's block/platform/msm_sdcc.1/by-name/persist mmcblk0p19 ' \
+            -e 's block/platform/msm_sdcc.1/by-name/boot mmcblk0p18 ' \
+            -e 's block/platform/msm_sdcc.1/by-name/recovery mmcblk0p20 ' \
+            -e 's block/platform/msm_sdcc.1/by-name/modem mmcblk0p1 ' \
+            -e 's block/platform/msm_sdcc.1/by-name/pad mmcblk0p8 ' \
+            -e 's block/platform/msm_sdcc.1/by-name/sns mmcblk0p37 ' \
+            -e 's block/platform/msm_sdcc.1/by-name/drm mmcblk0p36 ' \
+            -e 's block/platform/msm_sdcc.1/by-name/mpt mmcblk0p38 ' \
+            "$@"
+        ;;
     *)
         cat <<EOF
 
